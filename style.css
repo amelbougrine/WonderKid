@@ -70,7 +70,8 @@ div[class*="bar"] {
     transition: 0.7s ease;
 }
 .title2 {
-    right: 100px;
+    margin-top: 70px;
+    right: 120px;
 }
 .title h1, .title2 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
