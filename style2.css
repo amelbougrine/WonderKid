@@ -1,0 +1,41 @@
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+@media screen and (min-width: 1000px) {
+  .mainPage {
+    flex-direction: row;
+  }
+}
+
+.section {
+  flex: 1;
+  position: relative;
+  transition: 0.5s ease;
+}
+.section--left {
+  background-color: #0083CB;
+}
+.section--left:hover .image, .section--left:active .image, .section--left:focus .image {
+  width: 350px;
+  height: 350px;
+}
+.section--left:hover .title h1, .section--left:active .title h1, .section--left:focus .title h1 {
+  font-size: 54px;
+}
+.section--right {
+  background-color: #F79B01;
+}
+.section--right:hover .image2, .section--right:active .image2, .section--right:focus .image2 {
+  width: 350px;
+  height: 350px;
+}
+.section--right:hover .title2 h1, .section--right:active .title2 h1, .section--right:focus .title2 h1 {
+  font-size: 54px;
+}
+.section:hover, .section:active, .section:focus {
+  flex: 2;
+}
+
+/*# sourceMappingURL=style2.css.map */

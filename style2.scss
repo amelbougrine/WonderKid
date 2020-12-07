@@ -1,0 +1,49 @@
+$blue: #0083CB;
+$orange: #F79B01;
+
+
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+  }
+}
+
+.section {
+  flex: 1;
+  position: relative;
+  transition: 0.5s ease;
+
+  &--left{
+    background-color: $blue;
+    &:hover, &:active, &:focus {
+        .image {
+            width: 350px;
+            height: 350px;
+        }
+        .title h1 {
+            font-size: 54px;
+        }
+    }
+  }
+  &--right {
+    background-color: $orange;
+    &:hover, &:active, &:focus {
+        .image2 {
+            width: 350px;
+            height: 350px;
+        }
+        .title2 h1 {
+            font-size: 54px;
+        }
+    }
+  }
+
+  &:hover, &:active, &:focus {
+    flex: 2;
+  }
+
+}
