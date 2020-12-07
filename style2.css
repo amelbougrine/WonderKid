@@ -12,27 +12,76 @@
 .section {
   flex: 1;
   position: relative;
-  transition: 0.5s ease;
+  transition: 0.7s ease;
 }
 .section--left {
   background-color: #0083CB;
 }
 .section--left:hover .image, .section--left:active .image, .section--left:focus .image {
+  margin-left: 450px !important;
+}
+.section--left:hover .title, .section--left:active .title, .section--left:focus .title {
   width: 350px;
-  height: 350px;
+  margin-top: 50px;
 }
 .section--left:hover .title h1, .section--left:active .title h1, .section--left:focus .title h1 {
-  font-size: 54px;
+  margin-left: 110px;
+  font-size: 56px;
+}
+.section--left:hover .btn, .section--left:active .btn, .section--left:focus .btn {
+  opacity: 1;
+  margin-left: 180px;
+  width: 150px;
+  height: 150px;
+}
+.section--left:hover .btn:hover svg#play, .section--left:active .btn:hover svg#play, .section--left:focus .btn:hover svg#play {
+  display: block;
+  cursor: pointer;
+  transform-origin: 50% 50%;
+}
+.section--left:hover .btn:hover svg#play #triangle, .section--left:active .btn:hover svg#play #triangle, .section--left:focus .btn:hover svg#play #triangle {
+  fill: rgba(22, 22, 22, 0);
+  transition: 500ms;
+  transform-origin: 50% 50%;
+}
+.section--left:hover .btn:hover svg#play:hover #triangle, .section--left:active .btn:hover svg#play:hover #triangle, .section--left:focus .btn:hover svg#play:hover #triangle {
+  fill: #fff;
+  transform-origin: 50% 50%;
 }
 .section--right {
   background-color: #F79B01;
 }
 .section--right:hover .image2, .section--right:active .image2, .section--right:focus .image2 {
+  bottom: 30px;
+  right: 450px !important;
+}
+.section--right:hover .title2, .section--right:active .title2, .section--right:focus .title2 {
   width: 350px;
-  height: 350px;
+  margin-top: 50px;
 }
 .section--right:hover .title2 h1, .section--right:active .title2 h1, .section--right:focus .title2 h1 {
-  font-size: 54px;
+  right: 120px;
+  font-size: 56px;
+}
+.section--right:hover .btn2, .section--right:active .btn2, .section--right:focus .btn2 {
+  opacity: 1;
+  right: 180px;
+  width: 150px;
+  height: 150px;
+}
+.section--right:hover .btn2:hover svg#play, .section--right:active .btn2:hover svg#play, .section--right:focus .btn2:hover svg#play {
+  display: block;
+  cursor: pointer;
+  transform-origin: 50% 50%;
+}
+.section--right:hover .btn2:hover svg#play #triangle, .section--right:active .btn2:hover svg#play #triangle, .section--right:focus .btn2:hover svg#play #triangle {
+  fill: rgba(22, 22, 22, 0);
+  transition: 500ms;
+  transform-origin: 50% 50%;
+}
+.section--right:hover .btn2:hover svg#play:hover #triangle, .section--right:active .btn2:hover svg#play:hover #triangle, .section--right:focus .btn2:hover svg#play:hover #triangle {
+  fill: #fff;
+  transform-origin: 50% 50%;
 }
 .section:hover, .section:active, .section:focus {
   flex: 2;

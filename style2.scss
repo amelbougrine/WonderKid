@@ -15,17 +15,43 @@ $orange: #F79B01;
 .section {
   flex: 1;
   position: relative;
-  transition: 0.5s ease;
+  transition: 0.7s ease;
 
   &--left{
     background-color: $blue;
     &:hover, &:active, &:focus {
         .image {
-            width: 350px;
-            height: 350px;
+          margin-left: 450px !important;
+        }
+        .title {
+          width: 350px;
+          margin-top: 50px;
         }
         .title h1 {
-            font-size: 54px;
+          margin-left: 110px;
+          font-size: 56px;
+        }
+        .btn {
+          opacity: 1;
+          margin-left: 180px;
+          width: 150px;
+          height: 150px;
+          &:hover {
+            svg#play {
+                display:block;
+                cursor: pointer;
+                transform-origin: 50% 50%;
+              }
+              svg#play #triangle {
+                fill:rgba(22,22,22,0);
+                transition:500ms;
+                transform-origin: 50% 50%;
+              }
+              svg#play:hover #triangle {
+                fill:#fff;
+                transform-origin: 50% 50%;
+              }
+            }
         }
     }
   }
@@ -33,11 +59,38 @@ $orange: #F79B01;
     background-color: $orange;
     &:hover, &:active, &:focus {
         .image2 {
-            width: 350px;
-            height: 350px;
+          bottom: 30px;
+          right: 450px !important;
+        }
+        .title2 {
+          width: 350px;
+          margin-top: 50px;
         }
         .title2 h1 {
-            font-size: 54px;
+          right: 120px;
+          font-size: 56px;
+        }
+        .btn2 {
+          opacity: 1;
+          right: 180px;
+          width: 150px;
+          height: 150px;
+          &:hover {
+            svg#play {
+              display:block;
+              cursor: pointer;
+              transform-origin: 50% 50%;
+            }
+            svg#play #triangle {
+              fill:rgba(22,22,22,0);
+              transition:500ms;
+              transform-origin: 50% 50%;
+            }
+            svg#play:hover #triangle {
+              fill:#fff;
+              transform-origin: 50% 50%;
+            }
+          }
         }
     }
   }

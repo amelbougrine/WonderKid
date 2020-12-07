@@ -65,8 +65,9 @@ div[class*="bar"] {
     width: 200px;
     height: 100px;
     position: absolute;
-    margin-top: 120px;
-    margin-left: 100px;
+    margin-top: 80px;
+    margin-left: 80px;
+    transition: 0.7s ease;
 }
 .title2 {
     right: 100px;
@@ -76,7 +77,7 @@ div[class*="bar"] {
     font-size: 50px;
     font-weight: bold;
     color: #fff;
-    transition: 0.5s ease;
+    transition: 0.7s ease;
 }
 .image, .image2 {
     width: 300px;
@@ -84,11 +85,26 @@ div[class*="bar"] {
     position: absolute;
     bottom: 50px;
     margin-left: 270px;
-    transition: 0.5s ease;
+    transition: 0.7s ease;
 }
 .image2 {
     bottom: 20px;
-    right: 270px !important;
+    right: 270px;
+}
+.btn, .btn2 {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: 110px;
+    margin-left: 0px;
+    transition: 0.7s ease;
+}
+.btn2 {
+    right: 0px;
+}
+.btn {
+    transform: rotateY(180deg);
 }
     /* transition: all 1s ease-in-out; */
 
